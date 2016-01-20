@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Execute the adblocker.sh script after boot, since cru will run adblocker weekly it's
+# not really necessary to execute services-start again if it happens to contain other scripts
+/bin/sh /jffs/scripts/adblocker.sh
